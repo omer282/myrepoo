@@ -1,0 +1,16 @@
+.about {
+  background: #1d1515;
+  color: #fff;
+  padding: 3em 2em;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.about h2 {
+  color: #e94560;
+  margin-bottom: 1em;
+}
+.about p {
+  color: #ccc;
+  font-size: 1.1em;
+  line-height: 1.7em;
+}

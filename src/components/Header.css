@@ -1,0 +1,78 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 2.5em;
+  background: var(--header-bg-dark);
+  border-bottom: 1px solid #222;
+  transition: background 0.3s;
+}
+body[data-theme='light'] .header {
+  background: var(--header-bg-light);
+  border-bottom: 1px solid #eee;
+}
+.logo {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--text-dark);
+  transition: color 0.3s;
+}
+body[data-theme='light'] .logo {
+  color: var(--text-light);
+}
+.logo .accent {
+  color: var(--accent);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  color: var(--text-dark);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1em;
+  transition: color 0.2s;
+  position: relative;
+}
+body[data-theme='light'] nav a {
+  color: var(--text-light);
+}
+nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+}
+nav a:hover::after {
+  width: 100%;
+}
+nav a:hover {
+  color: var(--accent);
+}
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.6em;
+  margin-left: 2em;
+  cursor: pointer;
+  transition: color 0.2s;
+  color: var(--accent);
+}
+.theme-toggle:focus {
+  outline: 2px solid var(--accent);
+}
+@media (max-width: 600px) {
+  .theme-toggle {
+    margin-left: 0.5em;
+    font-size: 1.2em;
+  }
+}

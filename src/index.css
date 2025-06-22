@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #171212;
+  color: #fff;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+main {
+  min-height: 80vh;
+}
+
+.btn-accent {
+  background: #e94560;
+  color: #fff;
+  border: none;
+  padding: 0.7em 1.6em;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.btn-accent:hover {
+  background: #ff3c3c;
+}
